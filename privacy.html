@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Lumen</title>
+<style>
+:root{--bg:#ffffff;--fg:#1d1b20;--muted:#5f5b66;--line:#e6e1ea;--accent:#6750a4}
+@media (prefers-color-scheme:dark){:root{--bg:#141218;--fg:#e6e0e9;--muted:#b4adbb;--line:#2e2a33;--accent:#d0bcff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:1.8rem;line-height:1.25;margin:0 0 4px}
+h2{font-size:1.25rem;margin:2rem 0 .5rem;padding-top:1rem;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.25rem 0 .25rem}
+.meta{color:var(--muted);margin:0 0 1.5rem}
+a{color:var(--accent)}
+nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;font-size:.95rem}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.table-wrap{overflow-x:auto}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Lumen</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="delete-account.html">Delete your account</a></nav>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Lumen – AI Photo Editor · Last updated: November 20, 2026</p>
+
+<p>This policy explains what information Lumen – AI Photo Editor ("Lumen", "we", "us") handles when you use the app, why, who helps us process it, and the choices you have. Lumen is published by Porcupine. Questions: <a href="mailto:porcupinebase@gmail.com">porcupinebase@gmail.com</a>.</p>
+
+<p><strong>In short:</strong> most editing happens on your phone. Your photo leaves your phone only when you use a cloud AI tool (Magic Erase or Enhance); it is then processed to give you the result and deleted automatically. We never sell your photos or use them to train AI models. The app shows ads, which use your device's advertising ID.</p>
+
+<h2>1. Photos you edit</h2>
+<h3>On-device tools</h3>
+<p>Adjust, Filters, Crop, Text and Background (remove, color, blur) run entirely on your device. The Background tool uses Google's on-device ML Kit model, which Google Play services downloads to your phone; your photo is not sent to us for these tools. Photos you save are written to your phone's gallery (Pictures/Lumen).</p>
+
+<h3>Cloud AI tools (Magic Erase, Enhance)</h3>
+<p>These tools need powerful servers. When you start one:</p>
+<ul>
+<li>Lumen tells you the photo will be uploaded before the first upload, and you can ask it to check with you before every cloud job (Settings → Privacy → Ask before uploading).</li>
+<li>Your photo (and, for Magic Erase, the area you painted) is uploaded over an encrypted connection to our cloud storage (Google Firebase, servers in the United States).</li>
+<li>It is processed by our AI service provider <strong>fal.ai</strong>, which runs the AI models on our behalf. For Enhance in Portrait mode, <strong>Google Cloud Vision</strong> also detects faces in the photo so we can check that the result keeps them faithful.</li>
+<li>The finished result is stored in our cloud storage only so your phone can download it.</li>
+</ul>
+<p><strong>Deletion:</strong> uploaded photos and results are deleted automatically, normally within 24 hours and in any case within 48 hours. fal.ai keeps generated results for at most 1 hour and does not keep the request data. You can delete them sooner at any time with Settings → Privacy → <strong>Delete my cloud data</strong>.</p>
+<p>We do not look at your photos, we do not use them to train AI models, and we do not sell or share them for advertising.</p>
+
+<h2>2. Your account</h2>
+<ul>
+<li><strong>Anonymous account.</strong> When you first open Lumen, the app creates an anonymous account with a random ID (Firebase Authentication). It holds your credit balance and lets the server check that requests come from your app. No name or email is involved.</li>
+<li><strong>Google sign-in (optional, required to buy credits).</strong> If you sign in with Google, we receive your Google account ID, email address and name from Google so your credits stay with you on every phone. Your balance moves from the anonymous account to your Google account.</li>
+</ul>
+
+<h2>3. Credits and purchases</h2>
+<p>Payments are handled entirely by Google Play; we never see your card or payment details. When you buy credits we receive the purchase details from Google Play (product, purchase token, order status) to verify the purchase and add credits. We keep your credit balance and a history of credits added and used (purchases, starter credits, AI jobs, refunds of failed jobs) to run the service and prevent fraud.</p>
+
+<h2>4. Advertising</h2>
+<p>Lumen is free and shows ads through <strong>Google AdMob</strong> (only while your credit balance is below 10). To serve and measure ads, Google's ads SDK collects your device's advertising ID, IP address, device and app information and how you interact with ads. See <a href="https://policies.google.com/technologies/ads">how Google uses information from apps that use its services</a>.</p>
+<ul>
+<li>In the European Economic Area, the UK and Switzerland, Lumen asks for your consent (Google User Messaging Platform) before any ad is requested, and you can change your choice any time in Settings → Privacy → <strong>Ad privacy options</strong>.</li>
+<li>Anywhere, you can reset or delete your advertising ID, or opt out of personalized ads, in your phone's Settings → Privacy → Ads.</li>
+</ul>
+
+<h2>5. App security</h2>
+<p>To protect our servers from abuse, Lumen uses Firebase App Check with Google Play Integrity, which checks that requests come from a genuine copy of the app on a genuine device. This sends technical information about the app and device to Google.</p>
+
+<h2>6. What we do not collect</h2>
+<p>Lumen does not collect your location, contacts, messages, files other than the photos you choose to process in the cloud, or health data. The app does not include analytics or crash-reporting tools. Notifications ("Your photo is ready") are created on your phone.</p>
+
+<h2>7. Who processes your data</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Provider</th><th>What for</th><th>Data</th></tr>
+<tr><td>Google (Firebase: Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, App Check)</td><td>Accounts, credits, storing photos during cloud processing, running our server code</td><td>Account ID, email and name if you sign in, credit history, uploaded photos and results</td></tr>
+<tr><td>fal.ai</td><td>Running the AI models for Magic Erase and Enhance</td><td>The photo (and mask) of each cloud job</td></tr>
+<tr><td>Google Cloud Vision</td><td>Face detection for Enhance Portrait</td><td>The photo of that job</td></tr>
+<tr><td>Google Play</td><td>Payments, purchase verification, app integrity</td><td>Purchase details, device integrity signals</td></tr>
+<tr><td>Google AdMob and User Messaging Platform</td><td>Ads and ad consent</td><td>Advertising ID, IP address, device and ad-interaction data</td></tr>
+</table>
+</div>
+<p>These providers process the data on our behalf or under their own policies (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://fal.ai">fal.ai</a>). Your data may be processed in the United States and other countries where they operate.</p>
+
+<h2>8. How long we keep data</h2>
+<ul>
+<li>Uploaded photos and results: deleted automatically within 48 hours (usually 24), or when you tap Delete my cloud data.</li>
+<li>Cloud job records (tool used, status, cost): until you delete your cloud data or your account.</li>
+<li>Account, credit balance and credit history: until you delete your account.</li>
+<li>Records of completed purchases: kept after account deletion, without your account link, as long as needed for fraud prevention, refunds and tax law.</li>
+</ul>
+
+<h2>9. Your choices and rights</h2>
+<ul>
+<li><strong>Delete cloud data:</strong> Settings → Privacy → Delete my cloud data.</li>
+<li><strong>Delete your account:</strong> in the app (Settings → Account → Delete account) or by request — see <a href="delete-account.html">Delete your account</a>.</li>
+<li><strong>Ads:</strong> Ad privacy options in Settings (EEA/UK/CH) and your phone's ad settings.</li>
+<li>Depending on where you live, you may have the right to access, correct, delete or export your data, or object to its processing. Email <a href="mailto:porcupinebase@gmail.com">porcupinebase@gmail.com</a> and we will answer within 30 days.</li>
+</ul>
+
+<h2>10. Children</h2>
+<p>Lumen is not directed to children under 13, and we do not knowingly collect data from them. If you believe a child has used Lumen, contact us and we will delete the data.</p>
+
+<h2>11. Security</h2>
+<p>Data is encrypted in transit (HTTPS). Server access rules let each account read only its own data, and only our server code can change credits or jobs. No method is perfectly secure, but we work to protect your information.</p>
+
+<h2>12. Changes</h2>
+<p>We may update this policy as the app changes. We will change the "Last updated" date above and, for important changes, tell you in the app.</p>
+
+<h2>13. Contact</h2>
+<p>Porcupine · <a href="mailto:porcupinebase@gmail.com">porcupinebase@gmail.com</a></p>
+</main>
+</body>
+</html>
